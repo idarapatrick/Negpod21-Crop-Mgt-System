@@ -26,4 +26,3 @@ def user_guide() :
 user_guide()
 
 request = input().lower()
-

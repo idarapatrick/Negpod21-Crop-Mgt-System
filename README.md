@@ -5,4 +5,4 @@ This application was created to help solve some of the issues in agriculture. A 
 ### Key Features of the Application
 The application starts with a welcome message 
 
-![Start of The Application](image.png)
+![Start of The Application](images/image.png)
