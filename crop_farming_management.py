@@ -1,2 +1,2 @@
-Hello world!
-print(The indispensable coding meeting session)
+'Hello world!'
+print('The indispensable coding meeting session')
