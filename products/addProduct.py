@@ -18,14 +18,14 @@ def add_product(name, price, quantity):
     values = (name, price, quantity)
 
     # Execute the query
-    cursor.execute(query, values)
+    cursor.execute (query, values)
 
-    # Commit the changes to the database
+    # Commit the changes into the database
     db.commit()
 
     print("Product added successfully!")
 
-# Example usage
+# Example usage.
 add_product("Apple", 0.99, 100)
 
 # Close the database connection
