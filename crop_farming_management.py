@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-print('Hello world!!')
-print('The indispensable coding meeting session')
-=======
 
 def introduction():
  #Prints a welcome message and application overview
@@ -28,4 +24,3 @@ def user_guide():
 user_guide()
 
 request = input().lower()
->>>>>>> 14b3dc881f8a191cef8ecc9440acb5f064cb0956
