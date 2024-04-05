@@ -1,0 +1,28 @@
+import mysql.connector 
+
+# Connect to the database
+db = mysql.connector.connect(
+    host='localhost',
+    user="your_username",
+    password='your_password',
+    database='your_database'
+)
+
+# Create a cursor object
+cursor = db.cursor()
+
+# Define the product ID to delete
+product_id = 1
+
+# Prepare the SQL query
+sql = "DELETE FROM products WHERE id = %s"
+
+# Execute the query
+cursor.execute(sql, (product_id,))
+
+# Commit the changes
+db.commit()
+
+# Close the cursor and database connection
+cursor.close()
+db.close()
