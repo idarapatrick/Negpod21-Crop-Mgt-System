@@ -1,9 +1,26 @@
 # Crops management system
-from products.addProduct import add_product
-from products.exit import exiting_application
-from products.deleteProduct import delete_product
+from products.addProduct import add_product 
 from products.displayProducts import display_products
+from products.exit import exit_application
+from products.deleteProduct import delete_product
 from products.updateProduct import update_product
+
+# Define functions for each option
+def create_product_record():
+    add_product()
+
+def view_products_list():
+    display_products()
+
+def delete_product_record():
+    delete_product()
+
+def update_product_record():
+    update_product()
+
+def exiting_application():
+    exit_application()
+
 
 # System MENU
 while True:
@@ -16,14 +33,15 @@ while True:
     choice = input("Enter your choice: ")
 
     if choice == '1':
-        add_product()
+        create_product_record()
     elif choice == '2':
-        display_products()
+        view_products_list()
     elif choice == '3':
         delete_product()
     elif choice == '4':
-        update_product()
+        update_product_record()
     elif choice == '5':
         exiting_application()
+        break  # Exit the loop when the user chooses option 5
     else:
         print("Invalid choice.")

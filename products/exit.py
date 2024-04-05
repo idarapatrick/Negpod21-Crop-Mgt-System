@@ -1,5 +1,5 @@
-def exiting_application():
-    print("Thank you for using the Crops management System!!")
+def exit_application():
+    print("Thank you!!")
     exit(0)
 
-exiting_application()
+exit_application()

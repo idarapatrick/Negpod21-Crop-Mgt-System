@@ -12,17 +12,18 @@ cnx = mysql.connector.connect(
 
 # Create a cursor object to execute SQL queries
 cursor = cnx.cursor()
+def display_products():
+    # Execute the SQL query to retrieve the products
+    query = "SELECT * FROM products"
+    cursor.execute(query)
 
-# Execute the SQL query to retrieve the products
-query = "SELECT * FROM products"
-cursor.execute(query)
+    # Fetch all the products from the result set
+    products = cursor.fetchall()
 
-# Fetch all the products from the result set
-products = cursor.fetchall()
+    # Display the products in a tabular format
+    print(tabulate(products, headers=['ID', 'Name', 'Price', 'Location', 'Farmer', 'Quantity','Expiration Date'], tablefmt='pretty'))
 
-# Display the products in a tabular format
-print(tabulate(products, headers=['ID', 'Name', 'Price', 'Location', 'Farmer', 'Quantity','Expiration Date'], tablefmt='pretty'))
-
-# Close the cursor and connection
-cursor.close()
-cnx.close()
+    # Close the cursor and connection
+    cursor.close()
+    cnx.close()
+display_products()

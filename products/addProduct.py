@@ -33,7 +33,6 @@ def add_product():
 
     print("Product added successfully!")
 
-# Example usage
 add_product()
 
 # Close the database connection
