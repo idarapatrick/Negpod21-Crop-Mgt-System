@@ -34,8 +34,8 @@ def delete_product():
     print("Product deleted successfully!")
 
 # Example usage
-delete_product()
+# delete_product()
 
 # Close the cursor and database connection
-cursor.close()
-db.close()
+#cursor.close()
+#db.close()

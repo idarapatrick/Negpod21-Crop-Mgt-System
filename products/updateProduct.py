@@ -36,8 +36,8 @@ def update_product():
     print("Product updated successfully!")
 
 # Example usage
-update_product()
+# update_product()
 
 # Close the cursor and database connection
-cursor.close()
-db.close()
+#cursor.close()
+#db.close()

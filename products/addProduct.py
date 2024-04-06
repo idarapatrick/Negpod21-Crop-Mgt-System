@@ -30,10 +30,9 @@ def add_product():
 
     # Commit the changes into the database
     db.commit()
-
     print("Product added successfully!")
 
-add_product()
+# add_product()
 
 # Close the database connection
-db.close()
+#db.close()
