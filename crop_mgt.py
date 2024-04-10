@@ -1,15 +1,18 @@
+def welcome():
+    """Introduces the application and its functionalities."""
+    print("Welcome to the Crop Farming Management System!")
+    print("This application helps you manage your farming activities with ease.")
+    print("Here's what you can do:")
+    print("* Track crop information (planting, harvest, etc.)")
+    print("* Access pest and disease control guides")
+    print("* Connect with other farmers in a community forum (future implementation)")
+    print("\nWe are constantly improving, and will continually add new features to better your expereince")
 
-def introduction():
- #Prints a welcome message and application overview
-  print("Welcome to the Crop Farming Management System!")
-  print("This application is designed to connect farmers and buyers,")
-  print("facilitating crop shipment and transactions.")
-  print("We offer various agricultural services to suit your needs.\n")
 
-introduction()
+welcome()
 
 
-def user_guide() :
+def user_guide():
   """Prints the user guide content within the program."""
   user_guide_text = """
   **User Guide:**
