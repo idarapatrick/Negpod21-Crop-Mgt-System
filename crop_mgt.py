@@ -1,3 +1,4 @@
+
 def welcome():
     """Introduces the application and its functionalities."""
     print("Welcome to the Crop Farming Management System!")
@@ -25,7 +26,5 @@ def user_guide():
   """
   #Print the user guide text using a multi-line string
   print(user_guide_text)
-
-user_guide()
 
 request = input().lower()

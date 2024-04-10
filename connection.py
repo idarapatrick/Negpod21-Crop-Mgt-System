@@ -3,10 +3,10 @@ import mysql.connector
 # Establishing a connection to the MySQL database
 try:
     connection = mysql.connector.connect(
-        host="your_host",
-        user="your_username",
-        password="your_password",
-        database="your_database"
+        host="localhost",
+        user="root",
+        password="Yassin@123",
+        database="crops_mgmt"
     )
     if connection.is_connected():
         print("Connected to MySQL database")

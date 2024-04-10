@@ -1,28 +1,48 @@
+
 import mysql.connector
 
 # Connect to the database
 db = mysql.connector.connect(
-    host="localhost",
-    user="your_username",
-    password="your_password",
-    database="your_database"
+        host="localhost",
+        user="root",
+        password="Yassin@123",
+        database="crops_mgmt"
 )
 
 # Create a cursor object
 cursor = db.cursor()
 
-# Update the product
-product_id = 1  # Replace with the actual product ID
-new_price = 9.99  # Replace with the new price
+# Function to update a product in the database
+def update_product():
+    # Prompt the user for product details
+    product_id = input("Enter the ID of the product to update: ")
+    name = input("Enter new product name: ")
+    price = input("Enter new product price: ")
+    location = input("Enter new product location: ")
+    farmer = input("Enter new farmer name: ")
+    quantity = input("Enter new quantity: ")
+    expiration_date = input("Enter new expiration date: ")
 
-update_query = "UPDATE products SET price = %s WHERE id = %s"
-values = (new_price, product_id)
+    # SQL query to update the product
+    update_query = "UPDATE products SET name = %s, price = %s, location = %s, farmer = %s, quantity = %s,expiration_date=%s WHERE id = %s"
+    values = (name, price, location, farmer, quantity,expiration_date, product_id)
 
-cursor.execute(update_query, values)
+    # Execute the query
+    cursor.execute(update_query, values)
 
-# Commit the changes
-db.commit()
+    # Commit the changes to the database
+    db.commit()
+
+    print("Product updated successfully!")
+
+# Example usage
+# update_product()
 
 # Close the cursor and database connection
+<<<<<<< HEAD
 cursor.close()
 db.close()
+=======
+#cursor.close()
+#db.close()
+>>>>>>> refs/remotes/origin/main
