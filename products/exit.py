@@ -1,5 +1,5 @@
 def exit_application():
-    print("Thank you!!")
+    print("Thank you !!")
     exit(0)
 
 # exit_application()
