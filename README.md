@@ -20,6 +20,14 @@ The user guide contains a list of resources for easy navigation.
 6. Set up MySQL server if you don't have one already installed on your system. 
 7. Create a new database named "crop_mgmt" in MySql Server. Remember to add your mysql credentials in the main.py 
 8. Run main.py 
+Note: Before running the application make sure that all dependencies are properly installed 
+
+## Usage Instructions
+To use the application follow these steps:
+
+1. Start the program by running "main.py" file located in the "src" directory.
+2. The main menu will appear with options.
+
 # The welcoming message will be:  
 
 ![Start of The Application](images/image.png)
