@@ -1,25 +1,31 @@
-# Crops management system
-from products.addProduct import add_product 
+# Code to manage crops in the application
+from products.addProduct import add_product
 from products.displayProducts import display_products
 from products.deleteProduct import delete_product
 from products.updateProduct import update_product
 from products.exit import exit_application
 
+
 # Define functions for each option
 def create_product_record():
     add_product()
 
+
 def view_products_list():
     display_products()
+
 
 def delete_product_record():
     delete_product()
 
+
 def update_product_record():
     update_product()
 
+
 def exiting_application():
     exit_application()
+
 
 # System MENU
 while True:

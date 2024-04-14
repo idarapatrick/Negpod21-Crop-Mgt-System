@@ -1,24 +1,11 @@
 import mysql.connector
 
 # Connect to the database
-db = mysql.connector.connect(
-<<<<<<< HEAD
-    host='localhost',
-    user="your_username",
-    password='your_password',
-    database='your_database'
-=======
-        host="localhost",
-        user="root",
-        password="Yassin@123",
-        database="crops_mgmt"
->>>>>>> refs/remotes/origin/main
-)
+
 
 # Create a cursor object
 cursor = db.cursor()
 
-<<<<<<< HEAD
 # Define the product ID to delete
 product_id = 1
 
@@ -34,7 +21,8 @@ db.commit()
 # Close the cursor and database connection
 cursor.close()
 db.close()
-=======
+
+
 # Function to delete a product from the database
 def delete_product():
     # Prompt the user for the ID of the product to delete
@@ -56,11 +44,3 @@ def delete_product():
     db.commit()
 
     print("Product deleted successfully!")
-
-# Example usage
-# delete_product()
-
-# Close the cursor and database connection
-#cursor.close()
-#db.close()
->>>>>>> refs/remotes/origin/main

@@ -13,6 +13,8 @@ db = mysql.connector.connect(
 cursor = db.cursor()
 
 # Function to update a product in the database
+
+
 def update_product():
     # Prompt the user for product details
     product_id = input("Enter the ID of the product to update: ")
@@ -39,10 +41,11 @@ def update_product():
 # update_product()
 
 # Close the cursor and database connection
-<<<<<<< HEAD
+
+
+# cursor.close()
 cursor.close()
+
+
+# db.close()
 db.close()
-=======
-#cursor.close()
-#db.close()
->>>>>>> refs/remotes/origin/main
