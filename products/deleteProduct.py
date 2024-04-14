@@ -2,10 +2,6 @@ import mysql.connector
 
 # Connect to the database
 db = mysql.connector.connect(
-    host='localhost',
-    user="your_username",
-    password='your_password',
-    database='your_database'
     host="localhost",
     user="root",
     password="Yassin@123",
