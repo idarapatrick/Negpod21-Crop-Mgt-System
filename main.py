@@ -1,3 +1,11 @@
+# Code to manage crops in the application
+from products.addProduct import add_product
+from products.displayProducts import display_products
+from products.deleteProduct import delete_product
+from products.updateProduct import update_product
+from products.exit import exit_application
+
+
 def welcome():
     """Introduces the application and its functionalities."""
     print("Welcome to the Crop Farming Management System!")
@@ -29,15 +37,6 @@ def user_guide():
 
 
 user_guide()
-
-# to access services
-
-# Code to manage crops in the application
-from products.addProduct import add_product
-from products.displayProducts import display_products
-from products.deleteProduct import delete_product
-from products.updateProduct import update_product
-from products.exit import exit_application
 
 
 # Define functions for each option
@@ -85,19 +84,18 @@ def products():
 # Call the products function to start the menu
 products()
 
-
+# to access services
 request = input("** ").lower()
 if request == "services":
-  print("\nOur Available Services: ")
-  print("Inventory Management")
-  print("Transportation")
-  print("Pest/Disease Control Guides")
+    print("\nOur Available Services: ")
+    print("Inventory Management")
+    print("Transportation")
+    print("Pest/Disease Control Guides")
 elif request == "quit":
-  print("Thank you!")
-  exit(0)
+    print("Thank you!")
+    exit(0)
 elif request == "products":
     products()
 else:
-  print("Invalid input")
-  exit(0)
-
+    print("Invalid input")
+    exit(0)
