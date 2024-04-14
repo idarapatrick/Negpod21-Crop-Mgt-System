@@ -11,6 +11,7 @@ db = mysql.connector.connect(
 # Create a cursor object to interact with the database
 cursor = db.cursor()
 
+
 # Function to add a product to the database
 def add_product():
     # Prompt the user for product details
@@ -31,8 +32,3 @@ def add_product():
     # Commit the changes into the database
     db.commit()
     print("Product added successfully!")
-
-# add_product()
-
-# Close the database connection
-#db.close()

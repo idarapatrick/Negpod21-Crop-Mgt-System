@@ -24,6 +24,6 @@ def display_products():
     print(tabulate(products, headers=['ID', 'Name', 'Price', 'Location', 'Farmer', 'Quantity','Expiration Date'], tablefmt='pretty'))
 
     # Close the cursor and connection
-    cursor.close()
-    cnx.close()
+   #  cursor.close()
+   # cnx.close()
 # display_products()
