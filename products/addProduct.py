@@ -3,8 +3,8 @@ import mysql.connector
 # Connect to the database
 db = mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="Yassin@123",
+        user="root",  # Your mysql username here
+        password="Yassin@123",  # Your mysql password here
         database="crops_mgmt"
 )
 
