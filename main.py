@@ -1,6 +1,3 @@
-#!/usr/bin/bash
-import mysql.connector
-
 # Code to manage crops in the application
 from products.addProduct import add_product
 from products.displayProducts import display_products
