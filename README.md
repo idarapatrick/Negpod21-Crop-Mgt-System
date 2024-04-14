@@ -18,7 +18,8 @@ The user guide contains a list of resources for easy navigation.
    - git clone https://github.com/NegPod21/Crop-Management-System.git 
 5. Import the project into an Integrated Development Environment(IDE) like PyCharm, Visual Studio Code etc.
 6. Set up MySQL server if you don't have one already installed on your system. 
-7. Create a new database named "crop_mgmt" in MySql Server.
+7. Create a new database named "crop_mgmt" in MySql Server. Remember to add your mysql credentials in the main.py 
+8. Run main.py 
 # The welcoming message will be:  
 
 ![Start of The Application](images/image.png)
