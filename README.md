@@ -5,6 +5,7 @@ This application was created to help solve some of the issues in agriculture. A 
 # Key Features of the Application
 The application starts with a welcome message that introduces the user to the platform, followed by the user guide.
 The user guide contains a list of resources for easy navigation.
+
 # The welcoming message will be:  
 
 ![Start of The Application](images/image.png)
