@@ -1,7 +1,10 @@
 import mysql.connector
 from tabulate import tabulate
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d1bea0cb1810c6f48ec8d2bbc27d38354dfd58cd
 def display_products():
     # Connect to the MySQL database
     cnx = mysql.connector.connect(
@@ -32,6 +35,9 @@ def display_products():
         cnx.close()
 
 # Call the function to display the products
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d1bea0cb1810c6f48ec8d2bbc27d38354dfd58cd
 display_products()
