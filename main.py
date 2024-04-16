@@ -14,14 +14,14 @@ def welcome():
     print("* Keep records of your crops in different planting seasons")
     print("* Access pest and disease control guides")
     print("* Connect with transportation services to move your goods to consumers")
-    print("\nWe are constantly improving, and will continually add new features to better your experience")
+    print("\nWe are constantly improving, and will continually add new features to better your expereince")
 
 
 welcome()
 
 
 def user_guide():
-    """Prints the user guide content with in the program."""
+    """Prints the user guide content within the program."""
     user_guide_text = """
 **User Guide:**
 
