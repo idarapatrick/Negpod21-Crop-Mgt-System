@@ -27,7 +27,7 @@ def add_product():
     values = (name, price, location, farmer, quantity, exipiration_date)
 
     # Execute the query
-    cursor.execute (query, values)
+    cursor.execute(query, values)
 
     # Commit the changes into the database
     db.commit()

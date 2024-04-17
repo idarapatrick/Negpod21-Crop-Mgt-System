@@ -7,8 +7,12 @@ import displayProducts
 import exit
 import updateProduct
 import deleteProduct
+
+
 def main():
     welcome()
+
+
 def welcome():
     print("Welcome Again, client!")
     print("You have entered the services section of the application, and here are the services we offer:")
@@ -25,7 +29,7 @@ def welcome():
     print("Choose any number between 1 and 3 to continue", end="")
     answer_choice = int(input())
     if answer_choice == 1:
-      orderingproduct.main()
+        orderingproduct.main()
     if answer_choice == 2:
         Counselling.main()
     if answer_choice == 3:
@@ -34,14 +38,11 @@ def welcome():
         displayProducts.main()
     if answer_choice == 5:
         deleteProduct.main()
-    if answer_choice== 6:
+    if answer_choice == 6:
         updateProduct.main()
-    if answer_choice==7:
+    if answer_choice == 7:
         exit.main()
-    
 
 
 if __name__ == "__main__":
     welcome()
-
-        

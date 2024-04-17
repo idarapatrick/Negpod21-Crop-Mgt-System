@@ -1,6 +1,7 @@
 import mysql.connector
 from tabulate import tabulate
 
+
 def main():
     # Connect to the MySQL database
     cnx = mysql.connector.connect(
@@ -19,6 +20,7 @@ def main():
     # Close the cursor and connection
     cursor.close()
     cnx.close()
+
 
 def display_products(cursor):
     # Execute the SQL query to retrieve the products

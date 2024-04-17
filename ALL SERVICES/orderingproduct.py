@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import mysql.connector
 
+
 class Product:
     def __init__(self, id, name, price, location, farmer, quantity, expiration_date):
         self.id = id
@@ -10,6 +11,7 @@ class Product:
         self.farmer = farmer
         self.quantity = quantity
         self.expiration_date = expiration_date
+
 
 class Order:
     def __init__(self):
@@ -27,10 +29,12 @@ class Order:
             total += item['product'].price * item['quantity']
         return total
 
+
 def welcome():
     print("Welcome to the agro-products section, here you will be able to glance products we offer and make your order in a glimpse of second")
     print("Please press any number to continue", end="  ")
     answer_choice = int(input())
+
 
 def main():
     # Establish the connection
