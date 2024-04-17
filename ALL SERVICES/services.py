@@ -26,7 +26,7 @@ def welcome():
     print("8.If you wish to order agro-products, please press one")
     print("9. If you want to speak to one of our farming experts, please press 2")
     print("10.If you wish to get any information related to pests and related diseases, press 3")
-    print("11.Choose any number between 1 and 3 to continue", end="")
+    print("11.Choose any number between 1 and 7 to continue", end="")
     answer_choice = int(input())
     if answer_choice == 1:
         orderingproduct.main()
