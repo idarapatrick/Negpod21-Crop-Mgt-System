@@ -35,6 +35,10 @@ def welcome():
     print("Please press any number to continue", end="  ")
     answer_choice = int(input())
 
+def process_payment(order):
+    print("Processing your payment...")
+    # Add your payment processing code here
+    print(f"Payment for ${order.total_price()} has been processed. Thank you for your purchase!")
 
 def main():
     # Establish the connection
@@ -157,6 +161,7 @@ def main():
                 print("No product found with the given ID.")
         else:
             break
- 
+ # Process the payment
+    process_payment(order)
 if __name__ == "__main__":
     main()
