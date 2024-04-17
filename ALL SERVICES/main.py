@@ -42,11 +42,11 @@ while True:
     print("3.quit")
     choice = input("Enter your choice: ")
 
-    if choice == '1':
+    if choice == 'services':
         services.main()
-    elif choice == '2':
+    elif choice == 'help':
         help.main()
-    elif choice == '3':
+    elif choice == 'quit':
         exit.main()
         break  # Exit the while loop when the user chooses to exit
     else:
