@@ -13,13 +13,13 @@ def main():
 "Have a plan for pests and diseases: Pests and diseases can devastate a farm. Have a plan in place to deal with them.\n"
 "Keep accurate records: Good record-keeping can help you track your farm’s progress and make informed decisions.")
 
-    input("Press Enter to continue if you wish speaking to a professional of the field")
-    print("Call, 0781280833 or dial *860# or else reach our headquarter located at MAKUZA PEACE PLAZA FLOORQ,ROOM 4 for further assistance")
+    input("Press Enter to continue if you wish speaking to a professional of the field ")
+    print("Call, 0781280833 or dial *860# or else reach our headquarter located at MAKUZA PEACE PLAZA FLOORQ,ROOM 4 for further assistance ")
 
 
 # Call the function
     welcome()
 
+
 if __name__ == "__main__":
     main()
-

@@ -1,5 +1,6 @@
 import mysql.connector
 
+
 def main():
     # Connect to the database
     db = mysql.connector.connect(
@@ -18,6 +19,7 @@ def main():
     # Close the cursor and database connection
     cursor.close()
     db.close()
+
 
 def delete_product(db, cursor):
     # Prompt the user for the ID of the product to delete
@@ -39,6 +41,7 @@ def delete_product(db, cursor):
     db.commit()
 
     print("Product deleted successfully!")
+
 
 if __name__ == "__main__":
     main()

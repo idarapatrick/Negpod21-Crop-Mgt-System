@@ -34,25 +34,20 @@ def user_guide():
 user_guide()
 
 
-
-    # System MENU
+# System MENU
 while True:
-        print("Choose an option:")
-        print("1. access our services center")
-        print("2. Help")
-        print("3.quit")
-        choice = input("Enter your choice: ")
+    print("Choose an option:")
+    print("1. access our services center")
+    print("2. Help")
+    print("3.quit")
+    choice = input("Enter your choice: ")
 
-        if choice == '1':
-            services.main()
-        elif choice == '2':
-            help.main()
-        elif choice == '3':
-            exit.main()
-            break  # Exit the while loop when the user chooses to exit
-        else:
-            print("Invalid choice.")
-
-
-
-
+    if choice == '1':
+        services.main()
+    elif choice == '2':
+        help.main()
+    elif choice == '3':
+        exit.main()
+        break  # Exit the while loop when the user chooses to exit
+    else:
+        print("Invalid choice.")

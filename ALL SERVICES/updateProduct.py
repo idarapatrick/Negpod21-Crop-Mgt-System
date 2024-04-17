@@ -1,5 +1,6 @@
 import mysql.connector
 
+
 def main():
     # Connect to the database
     db = mysql.connector.connect(
@@ -19,6 +20,7 @@ def main():
     cursor.close()
     db.close()
 
+
 # Function to update a product in the database
 def update_product(db, cursor):
     # Prompt the user for product details
@@ -32,7 +34,7 @@ def update_product(db, cursor):
 
     # SQL query to update the product
     update_query = "UPDATE products SET name = %s, price = %s, location = %s, farmer = %s, quantity = %s,expiration_date=%s WHERE id = %s"
-    values = (name, price, location, farmer, quantity,expiration_date, product_id)
+    values = (name, price, location, farmer, quantity, expiration_date, product_id)
 
     # Execute the query
     cursor.execute(update_query, values)
