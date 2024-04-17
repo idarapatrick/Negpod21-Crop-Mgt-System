@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import mysql.connector
 
+
 class Product:
     def __init__(self, id, name, price, location, farmer, quantity, expiration_date):
         self.id = id
@@ -10,6 +11,7 @@ class Product:
         self.farmer = farmer
         self.quantity = quantity
         self.expiration_date = expiration_date
+
 
 class Order:
     def __init__(self):
@@ -27,10 +29,16 @@ class Order:
             total += item['product'].price * item['quantity']
         return total
 
+
 def welcome():
     print("Welcome to the agro-products section, here you will be able to glance products we offer and make your order in a glimpse of second")
     print("Please press any number to continue", end="  ")
     answer_choice = int(input())
+
+def process_payment(order):
+    print("Processing your payment...")
+    # Add your payment processing code here
+    print(f"Payment for ${order.total_price()} has been processed. Thank you for your purchase!")
 
 def main():
     # Establish the connection
@@ -60,7 +68,7 @@ def main():
     print("Enter your preffered Product id: ", end="")
     product_choice = int(input())
     while True:
-        product_choice = int(input("Enter your preferred Product id: "))
+        
         if product_choice == 2:
             print("The cost of One BANANA IS 5$")
             break
@@ -153,6 +161,7 @@ def main():
                 print("No product found with the given ID.")
         else:
             break
-
+ # Process the payment
+    process_payment(order)
 if __name__ == "__main__":
     main()
