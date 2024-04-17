@@ -4,8 +4,8 @@ import mysql.connector
 db = mysql.connector.connect(
         host="localhost",
         user="root",  # Your mysql username here
-        password="Yassin@123",  # Your mysql password here
-        database="crops_mgmt"
+        password="1234",  # Your mysql password here
+        database="Crop-Mgt-System"
 )
 
 # Create a cursor object to interact with the database

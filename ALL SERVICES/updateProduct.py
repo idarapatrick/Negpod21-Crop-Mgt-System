@@ -1,21 +1,26 @@
-
 import mysql.connector
 
-# Connect to the database
-db = mysql.connector.connect(
+def main():
+    # Connect to the database
+    db = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Yassin@123",
-        database="crops_mgmt"
-)
+        password="1234",
+        database="Crop-Mgt-System"
+    )
 
-# Create a cursor object
-cursor = db.cursor()
+    # Create a cursor object
+    cursor = db.cursor()
+
+    # Call the function to update a product in the database
+    update_product(db, cursor)
+
+    # Close the cursor and database connection
+    cursor.close()
+    db.close()
 
 # Function to update a product in the database
-
-
-def update_product():
+def update_product(db, cursor):
     # Prompt the user for product details
     product_id = input("Enter the ID of the product to update: ")
     name = input("Enter new product name: ")
@@ -37,15 +42,5 @@ def update_product():
 
     print("Product updated successfully!")
 
-# Example usage
-# update_product()
-
-# Close the cursor and database connection
-
-
-# cursor.close()
-cursor.close()
-
-
-# db.close()
-db.close()
+if __name__ == "__main__":
+    main()
