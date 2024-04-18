@@ -52,5 +52,3 @@ while True:
         break  # Exit the while loop when the user chooses to exit
     else:
         print("Invalid choice.")
-if __name__ == "__main__":
-    main()
