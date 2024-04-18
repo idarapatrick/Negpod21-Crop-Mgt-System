@@ -12,13 +12,13 @@ def main():
 "Diversify your income streams: Don’t rely on just one crop or animal. Diversification can help you weather market fluctuations.\n"
 "Have a plan for pests and diseases: Pests and diseases can devastate a farm. Have a plan in place to deal with them.\n"
 "Keep accurate records: Good record-keeping can help you track your farm’s progress and make informed decisions.")
-
+    welcome()
     input("Press Enter to continue if you wish speaking to a professional of the field ")
     print("Call, 0781280833 or dial *860# or else reach our headquarter located at MAKUZA PEACE PLAZA FLOORQ,ROOM 4 for further assistance ")
 
 
 # Call the function
-    welcome()
+    
 
 
 if __name__ == "__main__":

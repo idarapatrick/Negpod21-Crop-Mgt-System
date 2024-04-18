@@ -3,9 +3,9 @@ import services
 import help
 import exit
 
-
-def welcome():
-    """Introduces the application and its functionalities."""
+def main():
+    def welcome():
+     """Introduces the application and its functionalities."""
     print("Welcome to the Crop Farming Management System!")
     print("This application helps you manage your farming activities with ease.")
     print("Here's what you can do:")
@@ -15,7 +15,7 @@ def welcome():
     print("\nWe are constantly improving, and will continually add new features to better your expereince")
 
 
-welcome()
+    welcome()
 
 
 def user_guide():
@@ -51,3 +51,5 @@ while True:
         break  # Exit the while loop when the user chooses to exit
     else:
         print("Invalid choice.")
+if __name__ == "__main__":
+    main()
