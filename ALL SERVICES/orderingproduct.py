@@ -36,7 +36,7 @@ def welcome():
     answer_choice = int(input())
 
 def process_payment(order):
-    print("Processing your payment...")
+    print("Thank you for purchasing with us")
     # Add your payment processing code here
     print(f"Payment for ${order.total_price()} has been processed. Thank you for your purchase!")
 

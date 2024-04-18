@@ -30,8 +30,7 @@ def user_guide():
     print(user_guide_text)
 
 
-if __name__ == "__main__":
-    main()
+
 
 user_guide()
 
@@ -52,3 +51,5 @@ while True:
         break  # Exit the while loop when the user chooses to exit
     else:
         print("Invalid choice.")
+if __name__ == "__main__":
+    main()
