@@ -5,17 +5,16 @@ import exit
 
 def main():
     def welcome():
-     """Introduces the application and its functionalities."""
-    print("Welcome to the Crop Farming Management System!")
-    print("This application helps you manage your farming activities with ease.")
-    print("Here's what you can do:")
-    print("* Keep records of your crops in different planting seasons")
-    print("* Access pest and disease control guides")
-    print("* Connect with transportation services to move your goods to consumers")
-    print("\nWe are constantly improving, and will continually add new features to better your expereince")
+        """Introduces the application and its functionalities."""
+        print("Welcome to the Crop Farming Management System!")
+        print("This application helps you manage your farming activities with ease.")
+        print("Here's what you can do:")
+        print("* Keep records of your crops in different planting seasons")
+        print("* Access pest and disease control guides")
+        print("* Connect with transportation services to move your goods to consumers")
+        print("\nWe are constantly improving, and will continually add new features to better your expereince")
 
-
-    welcome()
+    welcome()  # Call the welcome function
 
 
 def user_guide():
@@ -31,8 +30,10 @@ def user_guide():
     print(user_guide_text)
 
 
-user_guide()
+if __name__ == "__main__":
+    main()
 
+user_guide()
 
 # System MENU
 while True:
